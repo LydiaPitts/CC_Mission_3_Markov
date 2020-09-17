@@ -117,7 +117,7 @@ public class Mission3 {
     }
 
 
-    public static String fileString(){
+    public static String fileString(String eye1, String eye2, String nose, String mouth){
         return "<!DOCTYPE html>" + "\n" + 
         "<html lang=\"en\">"  + "\n" +
         "  <head>"  + "\n" +
@@ -130,7 +130,15 @@ public class Mission3 {
         "    <h1>Markov Face</h1>" + "\n" +
         "    <h2>Lydia Pitts: Mission 3</h2>" + "\n" +
         "    <div class=\"Face\"> " + "\n" +
-        "        <div class=\"Eyes_Nose\">"
+        "        <div class=\"Eyes_Nose\">" + "\n" + 
+        "            <img class=\"leftEye\" src=\"" + eye1 + "\"></img>" + "\n" + 
+        "            <img class=\"rightEye\" src=\"" + eye2 + "\"></img>" + "\n" + 
+        "        </div>" + "\n" + 
+        "        <img class=\"nose\" src=\"" + nose + "\"></img>" + "\n" + 
+        "        <img class=\"mouth\" src=\"" + mouth + "\"></img>" + "\n" + 
+        "    </div>" + "\n" + 
+        "  </body>" + "\n" + 
+        "</html>"
         ;
     }
 
@@ -150,7 +158,7 @@ public class Mission3 {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
-        String string = fileString();
+        String string = fileString("./Images/Eyes/LeftEye3.jpeg", "./Images/Eyes/RightEye3.jpeg", "./Images/Nose/Nose2.jpeg", "./Images/Mouth/Mouth3.jpeg");
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(file));
             bw.write(string);
