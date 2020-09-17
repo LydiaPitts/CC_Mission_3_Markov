@@ -11,8 +11,11 @@ The challenge of multiple, and new, languages as well as applying concepts I kne
 
 Overall I was challenged in a very meaningful way throughout Mission 3!
 
+
 **Is This System Creative?**
+
 I believe that this system is not historically creative, but it is personally creative.I think novelty a weak factor for defining my system as creative. I believe that there are systems that have created faces from a variety of images of faces before, so in a historical sense it is not novel. But it is novel to me personally -- I have not created a system like this before and I am using my own personal artwork. I would not consider my system to be valuable to everyone, or even a large group, but to me it produces an interesting new perspective on art I have created before. I do believe my system is intentional. The goal is to create unique combinations of my artwork in the format of a face, and that is what it does! The process and product are coorelated. Overall I think my system is personally creative.
+
 
 **Code Description**
 
@@ -29,7 +32,7 @@ Demo Folder contains a screen recording of myself walking through and running my
 
 **Set Up and Run This Code**
 
-To begin running this code, you will need an IDE in which you are able to run Java. Simply open the Mission3.java file, and hit run. This program will automatically generate html files. In order to view the html files, I suggest that you use a laptop or desktop with access to a browser. Open the html files in the browser and you can see the representation of a face!
+To begin running this code, you will need an IDE in which you are able to run Java. Simply open the Mission3.java file, and hit run. This program will automatically generate html files. In order to view the html files, I suggest that you use a laptop or desktop with access to a browser. Open the html files in the browser and you can see the representation of a face! If you want to run it more than once, you have to delete the html files that were made by the previous run.
 
 
 **Works Cited**
