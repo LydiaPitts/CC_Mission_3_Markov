@@ -167,7 +167,7 @@ public class Mission3 {
         System.out.println(mouth_image);
         System.out.println("---------------");
 
-        makeHTML("Test1.html");
+        makeHTML("fileName.html");
 
         // Only new Things (pluus and import)
         //File f = new file("C:\\test.html");

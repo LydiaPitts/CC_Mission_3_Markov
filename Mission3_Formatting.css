@@ -1,0 +1,30 @@
+
+  .Face {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    
+  }
+  .leftEye {
+    background: #F7FFF7;
+    width: 200px;
+    align-self: start;
+    justify-content: start;
+    margin-right: 146px;
+  }
+  .rightEye {
+    background: #F7FFF7;
+    width: 200px;
+  }
+  .nose {
+      position: absolute;
+      margin-top: 100px;
+      margin-left: 200px;
+      width: 150px;
+      
+  }
+  .mouth {
+      width: 300px;
+      margin-left: 100px;
+      margin-top: 150px;
+  }

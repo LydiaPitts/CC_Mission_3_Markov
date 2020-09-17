@@ -4,31 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic HTML Page</title>
-    <style>
-      h1 {
-        color: green;
-      }
-      h2 {
-          color: red;
-      }
-    </style>
+    <link rel="stylesheet" href="Mission3_Formatting.css">
   </head>
 
   <body>
     <h1>Markov Face</h1>
     <h2>Mission 3 for my Computational Creativity Course</h2>
-    <button onclick="myFunction()">
-        <img src="./Images/Eyes/image.jpeg"></img>
-    </button>
 
-    <div id="Generate_Image_Button" ></div>
-    <div id="Face"> 
-        <div style="flex-direction: column;">
-            <img id="leftEye" src="./Images/Eyes/LeftEye1.jpeg" width="400"></img>
-            <img id="nose" src="./Images/Nose/Nose1.jpeg" width="300"></img>
-            <img id="rightEye" src="./Images/Eyes/RightEye1.jpeg" width="400" style="align-content: center; justify-content: center;"></img>
+    <div class="Generate_Image_Button" ></div>
+    <div class="Face"> 
+        <div class="Eyes_Nose">
+            <img class="leftEye" src="./Images/Eyes/LeftEye2.jpeg" width="400"></img>
+            <img class="rightEye" src="./Images/Eyes/RightEye1.jpeg" width="400" style="align-content: center; justify-content: center;"></img>
         </div>
-        <img id="mouth" src="./Images/Mouth/Mouth1.jpeg"></img>
+        <img class="nose" src="./Images/Nose/Nose2.jpeg" width="300"></img>
+        <img class="mouth" src="./Images/Mouth/Mouth3.jpeg"></img>
     </div>
   </body>
 
