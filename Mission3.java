@@ -144,7 +144,7 @@ public class Mission3 {
 
     //String eye1, String eye2, String nose, String mouth
 
-    public static void makeHTML (String fileName) {
+    public static void makeHTML (String fileName, String eye1, String eye2, String nose, String mouth) {
         System.out.println("doing");
         File file = new File(fileName);
         //Create the file
@@ -158,7 +158,7 @@ public class Mission3 {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
-        String string = fileString("./Images/Eyes/LeftEye3.jpeg", "./Images/Eyes/RightEye3.jpeg", "./Images/Nose/Nose2.jpeg", "./Images/Mouth/Mouth3.jpeg");
+        String string = fileString(eye1, eye2, nose, mouth);
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(file));
             bw.write(string);
@@ -193,7 +193,7 @@ public class Mission3 {
         System.out.println(mouth_image);
         System.out.println("---------------");
 
-        makeHTML("fileName.html");
+        makeHTML("fileName.html", eye1_image, eye2_image, nose_image, mouth_image);
 
         // Only new Things (pluus and import)
         //File f = new file("C:\\test.html");
