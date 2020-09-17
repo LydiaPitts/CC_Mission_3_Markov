@@ -173,27 +173,27 @@ public class Mission3 {
      * 
      */
     public static void main(String[] args) {
-        int eye1 = eye1();
-        String eye1_image = getImagePath(eyes(), eye1);
-        System.out.println(eye1_image);
-        System.out.println("---------------");
+        for(int i =0; i <6; i++){
+            String fileName = "File" + i + ".html";
 
-        int eye2 = eye2(eye1);
-        String eye2_image = getImagePath(eyes(), eye2);
-        System.out.println(eye2_image);
-        System.out.println("---------------");
+            int eye1 = eye1();
+            String eye1_image = getImagePath(eyes(), eye1);
 
-        int nose = nose(eye2);
-        String nose_image = getImagePath(noses(), nose);
-        System.out.println(nose_image);
-        System.out.println("---------------");
+            int eye2 = eye2(eye1);
+            String eye2_image = getImagePath(eyes(), eye2);
 
-        int mouth = mouth(nose);
-        String mouth_image = getImagePath(mouths(), mouth);
-        System.out.println(mouth_image);
-        System.out.println("---------------");
+            int nose = nose(eye2);
+            String nose_image = getImagePath(noses(), nose);
 
-        makeHTML("fileName.html", eye1_image, eye2_image, nose_image, mouth_image);
+            int mouth = mouth(nose);
+            String mouth_image = getImagePath(mouths(), mouth);
+
+            makeHTML(fileName, eye1_image, eye2_image, nose_image, mouth_image);
+        }
+        
+    
+
+        
 
         // Only new Things (pluus and import)
         //File f = new file("C:\\test.html");
