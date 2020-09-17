@@ -116,6 +116,24 @@ public class Mission3 {
         return getIndexFromProbability(probArray);
     }
 
+
+    public static String fileString(){
+        return "<!DOCTYPE html>" + "\n" + 
+        "<html lang=\"en\">"  + "\n" +
+        "  <head>"  + "\n" +
+        "    <meta charset=\"UTF-8\">" + "\n" + 
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"  + "\n" +
+        "    <title>Basic HTML Page</title>"  + "\n" + 
+        "    <link rel=\"stylesheet\" href=\"Mission3_Formatting.css\">"  + "\n" +
+        "  </head>" + "\n" +
+        "  <body>" + "\n" +
+        "    <h1>Markov Face</h1>" + "\n" +
+        "    <h2>Lydia Pitts: Mission 3</h2>" + "\n" +
+        "    <div class=\"Face\"> " + "\n" +
+        "        <div class=\"Eyes_Nose\">"
+        ;
+    }
+
     //String eye1, String eye2, String nose, String mouth
 
     public static void makeHTML (String fileName) {
@@ -132,7 +150,7 @@ public class Mission3 {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
-        String string = "<div> <h1> Some html </h1></div>";
+        String string = fileString();
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(file));
             bw.write(string);
