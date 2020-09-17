@@ -1,4 +1,7 @@
-import javax.swing.ImageIcon;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Mission3 {
 
@@ -113,6 +116,32 @@ public class Mission3 {
         return getIndexFromProbability(probArray);
     }
 
+    //String eye1, String eye2, String nose, String mouth
+
+    public static void makeHTML (String fileName) {
+        System.out.println("doing");
+        File file = new File(fileName);
+        //Create the file
+        try {
+            if (file.createNewFile()) {
+                System.out.println("File is created!");
+            } else {
+                System.out.println("File already exists.");
+            }
+        } catch (IOException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
+        String string = "<div> <h1> Some html </h1></div>";
+        try {
+            BufferedWriter bw = new BufferedWriter(new FileWriter(file));
+            bw.write(string);
+            bw.close();
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+    
 
     /**
      * 
@@ -138,6 +167,11 @@ public class Mission3 {
         System.out.println(mouth_image);
         System.out.println("---------------");
 
+        makeHTML("Test1.html");
+
+        // Only new Things (pluus and import)
+        //File f = new file("C:\\test.html");
+        
     }
 
 }
